@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid py-2">
+        <h3 class="text-center">Student Enrollment Form</h3>
+      </div>
+    </header>
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 p-5">
+          <form
+            action="#"
+            id="form"
+            class="formWidth needs-validation justify-content-center"
+            novalidate
+          >
+            <div class="form-group row">
+              <label class="col-lg-5" for="name">Name</label>
+              <input
+                type="name"
+                class="form-control col-lg-7"
+                id="name"
+                name="name"
+                required
+              />
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group row">
+              <label class="col-lg-5" for="email">Email</label>
+              <input
+                type="email"
+                class="form-control col-lg-7"
+                id="email"
+                name="email"
+                required
+              />
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group row">
+              <label class="col-lg-5" for="website">Website</label>
+              <input
+                type="url"
+                class="form-control col-lg-7"
+                id="website"
+                name="url"
+                required
+              />
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group row">
+              <label class="col-lg-5" for="image">Image Link</label>
+              <input
+                type="url"
+                class="form-control col-lg-7"
+                id="image"
+                name="image"
+                required
+              />
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group row">
+              <label class="col-lg-5" for="">Gender</label>
+              <div class="col-lg-7">
+                <div class="form-check">
+                  <label class="">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="gender"
+                    />Male
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      name="gender"
+                    />Female
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-lg-5" for="">Skills</label>
+              <div class="col-lg-7">
+                <div class="form-check">
+                  <label class="form-check-label pr-4">
+                    <input
+                      type="checkbox"
+                      name="skills"
+                      id="checkbox"
+                      class="form-check-input"
+                      value=""
+                    />Java
+                  </label>
+                  <label class="form-check-label pr-4">
+                    <input
+                      type="checkbox"
+                      name="skills"
+                      id="checkbox"
+                      class="form-check-input"
+                      value=""
+                    />HTML
+                  </label>
+                  <label class="form-check-label pr-4">
+                    <input
+                      type="checkbox"
+                      name="skills"
+                      id="checkbox"
+                      class="form-check-input"
+                      value=""
+                    />CSS
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="py-1">
+              <button type="submit" class="btn btn-primary mr-5 py-1">
+                Enroll Student
+              </button>
+              <button type="submit" class="btn btn-danger py-1">Clear</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="py-4 d-none d-lg-block">
+          <hr class="line" />
+        </div>
+
+        <div class="col">
+          <h3 class="text-center pt-4">Enrolled Students</h3>
+          <div class="p-none p-md-5">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th class="description">Description</th>
+                  <th class="image">Image</th>
+                </tr>
+              </thead>
+              <tbody id="table">
+                <tr>
+                  <td class="">
+                    <h6>John Doe</h6>
+                    <p>Male</p>
+                    <p>johndoe@gmail.com</p>
+                    <p>www.johndoe.com</p>
+                    <p>HTML</p>
+                  </td>
+                  <td>
+                    <img class="img-fluid" src="images/admin.png" alt="admin" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

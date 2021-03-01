@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header div {
+  background-color: #6decb9;
+  color: white;
+  border: 1px solid blue;
+}
+
+section {
+  border: 1px solid black;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+form div input {
+  border: 1px solid black !important;
+}
+
+.formWidth {
+  width: 60%;
+  margin: auto;
+}
+table {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+table td {
+  background-color: white;
+}
+
+.table-striped > tbody > tr:nth-child(2n) > td,
+.table-striped > tbody > tr:nth-child(2n) > th {
+  background-color: #ffeeba;
+}
+
+th {
+  background-color: #b6eb7a;
+}
+
+th.description {
+  width: 75%;
+}
+th.image {
+  width: 25%;
+}
+td img {
+  width: 90%;
+}
+
+table tbody tr td p {
+  margin-bottom: 0;
+}
+
+table tbody tr td h6 {
+  margin-bottom: 0;
+}
+
+.line {
+  background-color: #6decb9;
+  width: 5px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  th.description {
+    width: 60%;
+  }
+  th.image {
+    width: 40%;
+  }
+}
